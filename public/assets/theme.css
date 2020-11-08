@@ -38,6 +38,11 @@ body {
   font-family: Inter;
   font-weight: normal;
 }
+@media screen and (max-width: 415px) {
+  body {
+    margin: 20px;
+  }
+}
 
 #root {
   display: flex;
@@ -56,6 +61,140 @@ body {
 @media screen and (min-width: 415px) {
   .App {
     max-width: 1280px;
+  }
+}
+
+.contactform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+@media screen and (max-width: 415px) {
+  .contactform {
+    margin-bottom: 1REM;
+  }
+  .contactform img {
+    margin-bottom: 1REM;
+  }
+  .contactform form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .contactform form div {
+    width: 100%;
+    margin: 1REM 0;
+  }
+  .contactform form div input {
+    height: 50px;
+    border-radius: 2REM;
+    padding: 0 1REM;
+    width: 100%;
+    border: none;
+    background-color: #ededed;
+  }
+  .contactform form .textbox {
+    width: 100%;
+  }
+  .contactform form .textbox textarea {
+    border-radius: 2REM;
+    width: 100%;
+    height: 10REM;
+    border: none;
+    padding: 1REM 1REM;
+    background-color: #ededed;
+  }
+  .contactform form .button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contactform form .button-container button {
+    width: 100%;
+    height: 41px;
+    border-radius: 4REM;
+    background-color: #B781D0;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .contactform form .button-container button:hover {
+    filter: brightness(110%);
+    cursor: pointer;
+  }
+  .contactform form .button-container button:active {
+    transform: translateY(2px);
+    filter: brightness(90%);
+  }
+}
+@media screen and (min-width: 416px) {
+  .contactform {
+    margin-bottom: 1REM;
+  }
+  .contactform img {
+    margin-bottom: 1REM;
+  }
+  .contactform form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+  }
+  .contactform form div {
+    width: 100%;
+    margin: 1REM 0;
+  }
+  .contactform form div input {
+    height: 50px;
+    border-radius: 2REM;
+    padding: 0 1REM;
+    width: 100%;
+    border: none;
+    background-color: #ededed;
+  }
+  .contactform form .textbox {
+    width: 100%;
+  }
+  .contactform form .textbox textarea {
+    border-radius: 2REM;
+    width: 100%;
+    height: 10REM;
+    border: none;
+    padding: 1REM 1REM;
+    background-color: #ededed;
+  }
+  .contactform form .button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contactform form .button-container button {
+    width: 100%;
+    height: 41px;
+    border-radius: 4REM;
+    background-color: #B781D0;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .contactform form .button-container button:hover {
+    filter: brightness(110%);
+    cursor: pointer;
+  }
+  .contactform form .button-container button:active {
+    transform: translateY(2px);
+    filter: brightness(90%);
   }
 }
 

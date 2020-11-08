@@ -4,11 +4,6 @@ import github from '../../assets/images/github.svg';
 import linkedin from '../../assets/images/linkedin.svg';
 
 const Footer = () => {
-
-    const openLink = (url) => {
-
-    }
-
     return (
         <footer>
             <a href="https://github.com/CFKeef">
