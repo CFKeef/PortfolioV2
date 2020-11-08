@@ -120,6 +120,7 @@ nav button:active {
   }
   nav ul li:first-child {
     margin-right: 1REM;
+    display: none;
   }
   nav ul li button h1 {
     color: black;
@@ -132,7 +133,7 @@ nav button:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 0.5REM;
+    padding: 0 1REM;
     background-color: #FD828A;
     border-radius: 2REM;
   }
@@ -176,7 +177,7 @@ nav button:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 0.5REM;
+    padding: 0 1REM;
     background-color: #FD828A;
     border-radius: 2REM;
   }
@@ -265,6 +266,14 @@ nav button:active {
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
+}
+.projects .gitlink0,
+.projects .livelink1,
+.projects .livelink2 {
+  display: none !important;
+}
+.projects .livelink0 a {
+  background: #B781D0 !important;
 }
 @media screen and (max-width: 415px) {
   .projects {
@@ -694,6 +703,33 @@ nav button:active {
   footer a img:active {
     transform: translateY(2px);
   }
+}
+
+.resume {
+  margin: 0 0 4REM 0;
+}
+.resume .btn {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+}
+.resume .btn a {
+  text-decoration: none;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 1REM;
+  background: #B781D0;
+  color: white;
+  border-radius: 2REM;
+}
+.resume .btn a:hover {
+  filter: brightness(110%);
+  cursor: pointer;
+}
+.resume .btn a:active {
+  transform: translateY(2px);
+  filter: brightness(90%);
 }
 
 /*# sourceMappingURL=theme.css.map */

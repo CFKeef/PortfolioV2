@@ -97,6 +97,7 @@ nav {
 
                 &:first-child {
                     margin-right: 1REM;
+                    display: none;
                 }
 
                 button {
@@ -113,7 +114,7 @@ nav {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    padding: 0 .5REM;
+                    padding: 0 1REM;
                     background-color: #FD828A;
                     border-radius: 2REM;
 
@@ -167,7 +168,7 @@ nav {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    padding: 0 .5REM;
+                    padding: 0 1REM;
                     background-color: #FD828A;
                     border-radius: 2REM;
 
@@ -269,6 +270,18 @@ nav {
     align-items: flex-start;
     flex-direction: column;
     width: 100%;
+
+    .gitlink0,
+    .livelink1,
+    .livelink2 {
+        display: none !important;
+    }
+
+    .livelink0 {
+        a {
+            background: #B781D0 !important;
+        }
+    }
 
     @media screen and (max-width: 415px) {
         margin-bottom: 1REM;
@@ -759,6 +772,37 @@ footer {
                 &:active {
                     transform: translateY(2px);
                 }
+            }
+        }
+    }
+}
+
+.resume {
+    margin: 0 0 4REM 0;
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+
+        a {
+            text-decoration: none;
+            height: 40px;
+            line-height: 40px;
+            font-size: 18px;
+            padding: 0 1REM;
+            background: #B781D0;
+            color: white;
+            border-radius: 2REM;
+
+            &:hover {
+                filter: brightness(110%);
+                cursor: pointer;
+            }
+
+            &:active {
+                transform: translateY(2px);
+                filter: brightness(90%);
             }
         }
     }

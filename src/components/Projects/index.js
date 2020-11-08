@@ -5,6 +5,7 @@ import ToyMonImage from '../../assets/images/STORE.svg';
 import ExpensieImage from '../../assets/images/expensie.svg';
 import PanDashImage from '../../assets/images/prodoProj.svg';
 
+
 const Projects = () => {
     const projectsList = [
         {name: "ToyMon", techUsed: "React, Express, Electron", image: ToyMonImage, gitlink: null, live: null, description: "SAAS solution to improve the buying process for consumers purchasing highly sought after products"},
@@ -29,10 +30,10 @@ const Projects = () => {
                                         <p className='tech-p'>{project.techUsed}</p>
                                     </div>
                                     <div className='btns'>
-                                        <div className='link-container'>
-                                            <a className={'Github' + index + ' btnactive'} href={project.git}>Github</a>
+                                        <div className={'link-container gitlink' + index}>
+                                            <a className={'Github' + index + ' btnactive'} href={project.gitlink}>Github</a>
                                         </div>
-                                        <div className='link-container'>
+                                        <div className={'link-container livelink' + index}>
                                             <a className={'Live' + index + ' btnactive'} href={project.live}>Visit</a>
                                         </div>
                                     </div>
@@ -45,10 +46,10 @@ const Projects = () => {
     }
 
     return (
-        <section className="projects">
-            <img className="header" src={SectionHeader} />
-            {generateProjectCards()}
-        </section>
+            <section className="projects">
+                <img className="header" src={SectionHeader} alt="Projects section header"/>
+                {generateProjectCards()}
+            </section>
     )
 }
 
