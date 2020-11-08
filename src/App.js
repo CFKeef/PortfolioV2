@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 // Components
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 import ContactForm from './components/ContactForm';
@@ -17,7 +18,7 @@ function App() {
       case 'Resume':
         return (
           <React.Fragment>
-          
+            <Hero />
           </React.Fragment>
         )
 
@@ -34,6 +35,9 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar
+        setView={setView}
+      />
       {determineView()}
       <Footer />
     </div>
