@@ -44,6 +44,11 @@ body {
   }
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 #root {
   display: flex;
   justify-content: center;
@@ -61,6 +66,269 @@ body {
 @media screen and (min-width: 415px) {
   .App {
     max-width: 1280px;
+  }
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+@media screen and (max-width: 415px) {
+  .projects {
+    margin-bottom: 1REM;
+  }
+  .projects img {
+    margin-bottom: 1REM;
+  }
+  .projects ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .projects ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .projects ul li .Card {
+    margin-top: 4REM;
+    margin-bottom: 6REM;
+    border-radius: 2REM;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .projects ul li .Card .proj-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1REM;
+  }
+  .projects ul li .Card .proj-img img {
+    height: 100%;
+    width: 126px;
+  }
+  .projects ul li .Card .proj-text {
+    width: 100%;
+    padding: 0 22PX;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .projects ul li .Card .proj-text h2 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .projects ul li .Card .proj-text p {
+    font-size: 16px;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    color: rgba(255, 255, 255, 0.65);
+  }
+  .projects ul li .Card .proj-text .tech-p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .projects ul li .Card .btns {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .projects ul li .Card .btns .link-container {
+    display: inline-block;
+    width: 50%;
+  }
+  .projects ul li .Card .btns .link-container a {
+    border: 4px solid white;
+    border-radius: 4REM;
+    width: 125px;
+    height: 52px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    width: 65%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 1REM;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .projects ul li .Card .btns .link-container a:hover {
+    filter: brightness(110%);
+    cursor: pointer;
+  }
+  .projects ul li .Card .btns .link-container a:active {
+    transform: translateY(2px);
+    filter: brightness(90%);
+  }
+  .projects ul li .Card .btns .Github0 {
+    background-color: #B781D0;
+  }
+  .projects ul li .Card .btns .Live0 {
+    background-color: #0FCFC9;
+  }
+  .projects ul li .Card .btns .Github1 {
+    background-color: #0FCFC9;
+  }
+  .projects ul li .Card .btns .Live1 {
+    background-color: #FD828A;
+  }
+  .projects ul li .Card .btns .Github2 {
+    background-color: #FD828A;
+  }
+  .projects ul li .Card .btns .Live2 {
+    background-color: #B781D0;
+  }
+  .projects ul li .Numb0 {
+    background: #FD828A;
+  }
+  .projects ul li .Numb1 {
+    background: #B781D0;
+  }
+  .projects ul li .Numb2 {
+    background: #0FCFC9;
+  }
+}
+@media screen and (min-width: 416px) {
+  .projects {
+    margin-bottom: 1REM;
+  }
+  .projects .header {
+    margin-bottom: 1REM;
+  }
+  .projects ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .projects ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin: 4REM 0;
+  }
+  .projects ul li .Card {
+    border-radius: 2REM;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+  .projects ul li .Card .proj-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin: 1REM 0;
+  }
+  .projects ul li .Card .proj-img img {
+    height: auto;
+    width: 80%;
+  }
+  .projects ul li .Card .proj-text {
+    width: 100%;
+    height: 100%;
+    padding: 0 22PX;
+    margin-right: 2REM;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .projects ul li .Card .proj-text h2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .projects ul li .Card .proj-text p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 16px;
+  }
+  .projects ul li .Card .proj-text .tech-p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .projects ul li .Card .btns {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 25vh;
+  }
+  .projects ul li .Card .btns .link-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .projects ul li .Card .btns .link-container a {
+    border: 6px solid white;
+    padding: 0.5REM 2REM;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    left: 35px;
+  }
+  .projects ul li .Card .btns .link-container a:hover {
+    filter: brightness(110%);
+    cursor: pointer;
+  }
+  .projects ul li .Card .btns .link-container a:active {
+    transform: translateY(2px);
+    filter: brightness(90%);
+  }
+  .projects ul li .Card .btns .Github0 {
+    background-color: #B781D0;
+  }
+  .projects ul li .Card .btns .Live0 {
+    background-color: #0FCFC9;
+  }
+  .projects ul li .Card .btns .Github1 {
+    background-color: #0FCFC9;
+  }
+  .projects ul li .Card .btns .Live1 {
+    background-color: #FD828A;
+  }
+  .projects ul li .Card .btns .Github2 {
+    background-color: #FD828A;
+  }
+  .projects ul li .Card .btns .Live2 {
+    background-color: #B781D0;
+  }
+  .projects ul li .Numb0 {
+    background: #FD828A;
+  }
+  .projects ul li .Numb1 {
+    background: #B781D0;
+  }
+  .projects ul li .Numb2 {
+    background: #0FCFC9;
   }
 }
 

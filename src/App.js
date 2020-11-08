@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 
 // Components
-import Footer from './components/Footer';
+import Projects from './components/Projects';
 import ContactForm from './components/ContactForm';
+import Footer from './components/Footer';
+
 
 
 function App() {
@@ -16,10 +18,11 @@ function App() {
           
           </React.Fragment>
         )
-        
+
       default:
         return (
           <React.Fragment>
+            <Projects />
             <ContactForm />
           </React.Fragment>
         )
