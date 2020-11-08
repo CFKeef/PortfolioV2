@@ -69,6 +69,122 @@ ul {
   }
 }
 
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 70px;
+}
+nav button {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+}
+nav button img:hover {
+  filter: brightness(110%);
+  cursor: pointer;
+}
+nav button img:active {
+  transform: translateY(2px);
+  filter: brightness(90%);
+}
+nav button:hover {
+  filter: brightness(110%);
+  cursor: pointer;
+}
+nav button:active {
+  transform: translateY(2px);
+  filter: brightness(90%);
+}
+@media screen and (max-width: 415px) {
+  nav .logo button img {
+    width: auto;
+    height: 70px;
+  }
+  nav ul {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+  }
+  nav ul li {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul li:first-child {
+    margin-right: 1REM;
+  }
+  nav ul li button h1 {
+    color: black;
+    font-size: 16px;
+    line-height: 50px;
+    font-weight: 700;
+  }
+  nav ul li .contactbtn {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5REM;
+    background-color: #FD828A;
+    border-radius: 2REM;
+  }
+  nav ul li .contactbtn h1 {
+    color: white;
+  }
+}
+@media screen and (min-width: 416px) {
+  nav {
+    margin-top: 2REM;
+  }
+  nav .logo button img {
+    width: auto;
+    height: 70px;
+  }
+  nav ul {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+  }
+  nav ul li {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul li:first-child {
+    margin-right: 3REM;
+  }
+  nav ul li button h1 {
+    color: black;
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: 700;
+  }
+  nav ul li .contactbtn {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5REM;
+    background-color: #FD828A;
+    border-radius: 2REM;
+  }
+  nav ul li .contactbtn h1 {
+    color: white;
+  }
+}
+
 @media screen and (max-width: 415px) {
   .hero {
     display: flex;
@@ -522,12 +638,12 @@ ul {
   }
   .contactform form .button-container button {
     width: 100%;
-    height: 41px;
+    height: 40px;
     border-radius: 4REM;
     background-color: #B781D0;
     border: none;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 18px;
     color: white;
   }
   .contactform form .button-container button:hover {

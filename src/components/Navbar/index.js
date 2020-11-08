@@ -7,7 +7,7 @@ const Navbar = (props) => {
         <nav>
             <div className="logo">
                 <button onClick={() => props.setView("Home")}>
-                    <img src={Logo} />
+                    <img src={Logo} alt="Logo for website" />
                 </button>
             </div>
             <ul>
@@ -17,7 +17,7 @@ const Navbar = (props) => {
                     </button>
                 </li>
                 <li>
-                    <button>
+                    <button className="contactbtn" onClick={() => props.setView("Contact")}>
                         <h1>Contact</h1>
                     </button>
                 </li>
