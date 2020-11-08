@@ -1,0 +1,38 @@
+// FontFaces
+@font-face {
+    font-family: "Inter";
+    src: url("./fonts/Inter-regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("./fonts/Inter-bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("./fonts/Inter-semibold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./fonts/Inter-medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("./fonts/Inter-extralight.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("./fonts/Inter-light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}

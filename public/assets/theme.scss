@@ -1,0 +1,73 @@
+@import "fonts.scss";
+
+body {
+    font-family: Inter;
+    font-weight: normal;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media screen and (min-width: 415px) {
+        max-width: 1280px;
+    };
+    width: 100%;
+}
+
+footer {
+    @media screen and (max-width: 415px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+
+        width: 10REM;
+
+        a {
+            img {
+                height: 35px;
+                width: auto;
+
+                &:hover {
+                    cursor: pointer;
+                }
+                &:active {
+                    transform: translateY(2px);
+                }
+            }
+        }
+    };
+    
+    @media screen and (min-width: 416px) {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+
+        width: 20REM;
+
+        a {
+            img {
+                height: 35px;
+                width: auto;
+
+                &:hover {
+                    cursor: pointer;
+                }
+                &:active {
+                    transform: translateY(2px);
+                }
+            }
+        }
+    };
+}

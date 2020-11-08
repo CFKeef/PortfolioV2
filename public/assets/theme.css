@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-extralight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+body {
+  font-family: Inter;
+  font-weight: normal;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+@media screen and (min-width: 415px) {
+  .App {
+    max-width: 1280px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 10REM;
+  }
+  footer a img {
+    height: 35px;
+    width: auto;
+  }
+  footer a img:hover {
+    cursor: pointer;
+  }
+  footer a img:active {
+    transform: translateY(2px);
+  }
+}
+@media screen and (min-width: 416px) {
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 20REM;
+  }
+  footer a img {
+    height: 35px;
+    width: auto;
+  }
+  footer a img:hover {
+    cursor: pointer;
+  }
+  footer a img:active {
+    transform: translateY(2px);
+  }
+}
+
+/*# sourceMappingURL=theme.css.map */
