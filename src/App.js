@@ -7,9 +7,6 @@ import Projects from './components/Projects';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 
-
-
-
 function App() {
   const [view, setView] = useState('');
 
@@ -22,6 +19,13 @@ function App() {
           </React.Fragment>
         )
 
+      case 'Contact':
+        return (
+          <React.Fragment>
+            <ContactForm />
+          </React.Fragment>
+        )
+        
       default:
         return (
           <React.Fragment>
