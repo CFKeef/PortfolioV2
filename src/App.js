@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 
 // Components
+import Hero from './components/Hero';
 import Projects from './components/Projects';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
+
 
 
 
@@ -22,6 +24,7 @@ function App() {
       default:
         return (
           <React.Fragment>
+            <Hero />
             <Projects />
             <ContactForm />
           </React.Fragment>

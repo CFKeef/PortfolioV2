@@ -34,6 +34,89 @@ ul {
     width: 100%;
 }
 
+.hero {
+    @media screen and (max-width: 415px) {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column-reverse;
+
+        .bio {
+            margin: 2REM 0;
+
+            h1,h2{
+                font-weight: 400;
+                font-size: 23px;
+            }
+        
+            h1{
+                margin-top: 2REM;
+                margin-bottom: .5REM;
+            }
+            h2{
+                margin-top: 0;
+            }
+
+            mark{
+                background:none; 
+                font-weight: 700;   
+            }
+            .pink-highlight{
+                color:#FD828A;
+            }
+            .purple-highlight{
+                color: #b781d0;
+            }
+        }
+        img {
+            margin: 3REM 0;
+        }
+    }
+    @media screen and (min-width: 416px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        margin: 5REM 0 10REM 0;
+
+        .bio {
+
+            h1,h2{
+                font-weight: 400;
+                font-size: 23px;
+            }
+        
+            h1{
+                margin-bottom: 2REM;
+            }
+
+            h2{
+                width: 70%;
+                margin-bottom: 2REM;
+            }
+
+            mark{
+                background:none; 
+                font-weight: 700;   
+            }
+            .pink-highlight{
+                color:#FD828A;
+            }
+            .purple-highlight{
+                color: #b781d0;
+            }
+            img {
+                padding: 2REM 0 0 0;
+            }
+        }
+        img {
+            height: 40%;
+            width: 40%;
+        }
+    }
+}
+
 .projects {
     display: flex;
     justify-content: center;
@@ -516,6 +599,7 @@ footer {
         flex-direction: row;
 
         width: 20REM;
+        margin-bottom: 2REM;
 
         a {
             img {
