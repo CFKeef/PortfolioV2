@@ -268,6 +268,7 @@ nav button:active {
   width: 100%;
 }
 .projects .gitlink0,
+.projects .livelink0,
 .projects .livelink1,
 .projects .livelink2 {
   display: none !important;
